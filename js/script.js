@@ -1,18 +1,18 @@
 class User {
-constructor(name) {
+  constructor(name) {
     this.name = name;
-}
+  }
+  addUsername(name) {
+    this.name = name;
+  }
 }
 
 let username;
- function getValue() {
-   
-    let userinput = document.getElementById('username').value;
-    console.log("Значение input: " + userinput);
-    username = userinput;     
-} ;
+let user1;
+function getValue() {
 
-let user1 = new User(username);
-
-
-
+  username = document.getElementById("username").value;
+  console.log("Значение input: " + username);
+  user1 = new User(username);
+  console.log(user1)
+}
